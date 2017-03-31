@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 
-    <title>Dobble Members</title>
+    <title>Dobble Photos</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -15,6 +15,7 @@
     <!-- Custom styles for this template -->
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/ekko-lightbox.css" rel="stylesheet">
 
   </head>
 
@@ -54,9 +55,9 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="members.html">Members</a></li>
+            <li><a href="members.html">Members</a></li>
             <li><a href="groups.html">Groups</a></li>
-            <li><a href="photos.html">Photos</a></li>
+            <li class="active"><a href="photos.html">Photos</a></li>
             <li><a href="profile.html">Profile</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -67,99 +68,54 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-            <div class="members">
-              <h1 class="page-header">Members</h1>
-              <div class="row member-row">
-                <div class="col-md-3">
-                  <img src="img/user.png" class="img-thumbnail">
-                  <div class="text-center">UserOne</div>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-success btn-block"><i class="fa fa-users"></i> Friend Request</a></p>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-default btn-block"><i class="fa fa-envelope-o"></i> Send Message</a></p>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-primary btn-block"><i class="fa fa-edit"></i> View Profile</a></p>
-                </div>
-              </div>
-              <div class="row member-row">
-                <div class="col-md-3">
-                  <img src="img/user.png" class="img-thumbnail">
-                  <div class="text-center">UserOne</div>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-success btn-block"><i class="fa fa-users"></i> Friend Request</a></p>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-default btn-block"><i class="fa fa-envelope-o"></i> Send Message</a></p>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-primary btn-block"><i class="fa fa-edit"></i> View Profile</a></p>
-                </div>
-              </div>
-              <div class="row member-row">
-                <div class="col-md-3">
-                  <img src="img/user.png" class="img-thumbnail">
-                  <div class="text-center">UserOne</div>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-success btn-block"><i class="fa fa-users"></i> Friend Request</a></p>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-default btn-block"><i class="fa fa-envelope-o"></i> Send Message</a></p>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-primary btn-block"><i class="fa fa-edit"></i> View Profile</a></p>
-                </div>
-              </div>
-              <div class="row member-row">
-                <div class="col-md-3">
-                  <img src="img/user.png" class="img-thumbnail">
-                  <div class="text-center">Usertwo</div>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-success btn-block"><i class="fa fa-users"></i> Friend Request</a></p>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-default btn-block"><i class="fa fa-envelope-o"></i> Send Message</a></p>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-primary btn-block"><i class="fa fa-edit"></i> View Profile</a></p>
-                </div>
-              </div>
-              <div class="row member-row">
-                <div class="col-md-3">
-                  <img src="img/user.png" class="img-thumbnail">
-                  <div class="text-center">UserThree</div>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-success btn-block"><i class="fa fa-users"></i> Friend Request</a></p>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-default btn-block"><i class="fa fa-envelope-o"></i> Send Message</a></p>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-primary btn-block"><i class="fa fa-edit"></i> View Profile</a></p>
-                </div>
-              </div>
-              <div class="row member-row">
-                <div class="col-md-3">
-                  <img src="img/user.png" class="img-thumbnail">
-                  <div class="text-center">UserOne</div>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-success btn-block"><i class="fa fa-users"></i> Friend Request</a></p>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-default btn-block"><i class="fa fa-envelope-o"></i> Send Message</a></p>
-                </div>
-                <div class="col-md-3">
-                  <p><a href="#" class="btn btn-primary btn-block"><i class="fa fa-edit"></i> View Profile</a></p>
-                </div>
-              </div>
-            </div>
+            <h1 class="page-header">Photos</h1>
+            <ul class="photos gallery-parent">
+              <li>
+                <a href="img/sample1.jpg" data-hover="tooltip" data-placement="top" title="Select This Image"data-parent=".gallery-parent"data-gallery="mygallery" data-title="test image" data-footer="test description"data-toggle="lightbox">
+                  <img src="img/sample1.jpg"class="img-thumbnail">
+                </a>
+              </li>
+              <li>
+                <a href="img/sample1.jpg" data-hover="tooltip" data-placement="top" title="Select This Image"data-parent=".gallery-parent"data-gallery="mygallery" data-title="test image" data-footer="test description"data-toggle="lightbox">
+                  <img src="img/sample1.jpg"class="img-thumbnail">
+                </a>
+              </li>
+              <li>
+                <a href="img/sample1.jpg" data-hover="tooltip" data-placement="top" title="Select This Image"data-parent=".gallery-parent"data-gallery="mygallery" data-title="test image" data-footer="test description"data-toggle="lightbox">
+                  <img src="img/sample1.jpg"class="img-thumbnail">
+                </a>
+              </li>
+              <li>
+                <a href="img/sample1.jpg" data-hover="tooltip" data-placement="top" title="Select This Image"data-parent=".gallery-parent"data-gallery="mygallery" data-title="test image" data-footer="test description"data-toggle="lightbox">
+                  <img src="img/sample1.jpg"class="img-thumbnail">
+                </a>
+              </li>
+              <li>
+                <a href="img/sample1.jpg" data-hover="tooltip" data-placement="top" title="Select This Image"data-parent=".gallery-parent"data-gallery="mygallery" data-title="test image" data-footer="test description"data-toggle="lightbox">
+                  <img src="img/sample1.jpg"class="img-thumbnail">
+                </a>
+              </li>
+              <li>
+                <a href="img/sample1.jpg" data-hover="tooltip" data-placement="top" title="Select This Image"data-parent=".gallery-parent"data-gallery="mygallery" data-title="test image" data-footer="test description"data-toggle="lightbox">
+                  <img src="img/sample1.jpg"class="img-thumbnail">
+                </a>
+              </li>
+              <li>
+                <a href="img/sample1.jpg" data-hover="tooltip" data-placement="top" title="Select This Image"data-parent=".gallery-parent"data-gallery="mygallery" data-title="test image" data-footer="test description"data-toggle="lightbox">
+                  <img src="img/sample1.jpg"class="img-thumbnail">
+                </a>
+              </li>
+              <li>
+                <a href="img/sample1.jpg" data-hover="tooltip" data-placement="top" title="Select This Image"data-parent=".gallery-parent"data-gallery="mygallery" data-title="test image" data-footer="test description"data-toggle="lightbox">
+                  <img src="img/sample1.jpg"class="img-thumbnail">
+                </a>
+              </li>
+              <li>
+                <a href="img/sample1.jpg" data-hover="tooltip" data-placement="top" title="Select This Image"data-parent=".gallery-parent"data-gallery="mygallery" data-title="test image" data-footer="test description"data-toggle="lightbox">
+                  <img src="img/sample1.jpg"class="img-thumbnail">
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div class="col-md-4">
@@ -227,5 +183,14 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.js"></script>
+      <script src="js/ekko-lightbox.js"></script>
+      <script>
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();$(this).ekkoLightbox();
+      });
+      $(function () {
+        $('[data-hover="tooltip"]').tooltip()
+      })
+      </script>
 
 </body></html>
