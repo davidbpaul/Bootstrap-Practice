@@ -1,0 +1,31 @@
+@import 'vendors/_bootstrap.scss';
+body{
+  padding-bottom: 50px;
+  background-color: #ceb69e;
+}
+.profile-pic{
+  width:100%;
+  margin:auto;
+
+}
+#body-resume{
+  border-top-style:solid;
+  border-color: black;
+  border-width: 100%;
+  background-color: white;
+
+}
+#info{
+  width:100%;
+}
+#slider{
+  height: 400px;
+  width: 100%;
+}
+// media queries
+
+@media(max-width:991px){
+  .centering{
+    text-align: center;
+  }
+}
